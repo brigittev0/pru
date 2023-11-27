@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         authViewModel = new ViewModelProvider(this).get(AuthViewModel.class); //viewmodel reference
         binding.btningresar.setOnClickListener(this);
         binding.btnregistro.setOnClickListener(this);
+        //inicialmente null luego se carga con un json - livedata porque no sabemos cuanto demorara en responder el servidor
         authViewModel.loginResponseMutableLiveData.observe(this, new Observer<LoginResponse>() {
             @Override
             public void onChanged(LoginResponse loginResponse) {

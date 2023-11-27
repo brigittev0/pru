@@ -1,5 +1,5 @@
 package com.example.appidatpatitass11.retrofit.request;
-
+//request lo que se envia en el cuerpo de la peticion - body - raw -json
 public class LoginRequest { //definir objecto
     private String usuario;
     private String password;
